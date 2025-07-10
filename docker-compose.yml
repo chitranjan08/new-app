@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app           # Sync current dir with /app inside container
+      - /app/node_modules  # Avoid overwriting node_modules
+    container_name: node-dev
