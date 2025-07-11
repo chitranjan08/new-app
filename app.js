@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-  res.send('Hello12');
+  res.send('Hello45');
 });
 // Start server
 app.listen(3000, '0.0.0.0', () => {
